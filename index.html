@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/css/includes.css">
+    <!-- Librarias -->
+    <link rel="stylesheet" href="assets/lib/owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <script src="assets/js/cabecalho.js"></script>
     <script src="assets/js/main.js"></script>
     <link rel="shortcut icon" href="assets/img/sistema/fav-icon.svg" type="image/x-icon">
@@ -116,13 +119,6 @@
                     </div>
                 </div>
             </div>
-<!--             <div class="box-titles">
-                <h3 class="title">Sobre</h3>
-                <p class="subtitle">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vero tenetur laudantium culpa magnam? Porro, quia.
-                </p>
-             </div> -->
         </section>
 
         <section class="section-recentes section" id="recentes">
@@ -130,8 +126,53 @@
              <div class="box-titles">
                 <h3 class="title">Serviços recentes</h3>
                 <p class="subtitle">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing.
+                    Confira nossos trabalhos recentes
                 </p>
+             </div>
+
+             <div class="container-fluid container-recentes">
+                 <div class="row">
+                    <div class="col">
+
+                        <div class="owl-carousel owl-theme owl-carousel-servicos-recentes">
+                            <div class="item item-recentes">
+                                <div class="background-item" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(assets/img/sistema/recentes/recente-01.jpg);">
+                                    <div class="box-informacoes">
+                                        <div class="icon-visualizar">
+                                            <span><i class="far fa-eye"></i></span>
+                                        </div>
+                                        <div class="titles">
+                                            <h5 class="title">
+                                                Lorem ipsum dolor sit.
+                                            </h5>
+                                            <p class="subtitle">
+                                                Fotografia
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item item-recentes">
+                                <div class="background-item" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(assets/img/sistema/recentes/recente-02.jpg);">
+                                    <div class="box-informacoes">
+                                        <div class="icon-visualizar">
+                                            <span><i class="far fa-eye"></i></span>
+                                        </div>
+                                        <div class="titles">
+                                            <h5 class="title">
+                                                Lorem ipsum dolor sit.
+                                            </h5>
+                                            <p class="subtitle">
+                                                Book,mãe e filha
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
              </div>
 
 
@@ -185,7 +226,8 @@
 
     <!-- OwlCarousel -->
     <script src="assets/lib/owlCarousel/dist/owl.carousel.min.js"></script>
-
+    <!-- OwlCarousel config sliders -->
+    <script src="assets/js/sliders.js"></script>
     <!-- Bootstrap -->
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 

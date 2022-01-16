@@ -28,24 +28,27 @@ body {
   grid-template-columns: [inicio-left] 5% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 5% [fim-rigth];
   grid-template-rows: [inicio-section-home] 100vh [fim-section-home] 0px [inicio-section-sobre] auto [fim-section-sobre] 0px [inicio-section-recentes] auto [fim-section-recentes] 0px [inicio-section-portfolio] min(100vh) [fim-section-portfolio] 0px [inicio-section-avaliacoes] min(100vh) [fim-section-avaliacoes] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
 }
-.container-principal .section .box-titles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0;
-}
-.container-principal .section .box-titles .title {
-  text-transform: uppercase;
-  color: #DA4167;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 14px;
-}
-.container-principal .section .box-titles .subtitle {
-  text-align: center;
-  color: #333333;
-  font-size: 14px;
-  padding: 0 15px;
+.container-principal .section {
+  /*         .box-titles{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin:30px 0;
+
+              .title{
+                  text-transform: uppercase;
+                  color: v.$cor-primaria;
+                  margin-bottom: 10px;
+                  font-weight: bold;
+                  font-size: 14px;
+              }
+              .subtitle{
+                  text-align: center;
+                  color: v.$cor-secundaria;
+                  font-size: 14px;
+                  padding: v.$pad-texto;
+              }
+          } */
 }
 
 .contente-btn-volta-topo {
@@ -396,8 +399,74 @@ body {
   }
 }
 .section-recentes {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-recentes/fim-section-recentes;
+  background: #d63384;
+}
+.section-recentes .box-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+.section-recentes .box-titles .title {
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.section-recentes .box-titles .subtitle {
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  padding: 10px 30px;
+}
+.section-recentes .container-recentes {
+  padding-bottom: 30px;
+}
+.section-recentes .container-recentes .item {
+  height: 230px;
+  padding: 0 8px;
+}
+.section-recentes .container-recentes .item .background-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-recentes .container-recentes .item .background-item .box-informacoes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.section-recentes .container-recentes .item .background-item .box-informacoes .icon-visualizar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-recentes .container-recentes .item .background-item .box-informacoes .icon-visualizar span {
+  cursor: pointer;
+  color: #FFF;
+}
+.section-recentes .container-recentes .item .background-item .box-informacoes .titles {
+  display: flex;
+  flex-direction: column;
+}
+.section-recentes .container-recentes .item .background-item .box-informacoes .titles .title {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+.section-recentes .container-recentes .item .background-item .box-informacoes .titles .subtitle {
+  font-size: 14px;
+  color: #d63384;
+  margin: 0;
 }
 
 .section-portfolio {

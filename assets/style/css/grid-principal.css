@@ -5,24 +5,27 @@
   grid-template-columns: [inicio-left] 5% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 5% [fim-rigth];
   grid-template-rows: [inicio-section-home] 100vh [fim-section-home] 0px [inicio-section-sobre] auto [fim-section-sobre] 0px [inicio-section-recentes] auto [fim-section-recentes] 0px [inicio-section-portfolio] min(100vh) [fim-section-portfolio] 0px [inicio-section-avaliacoes] min(100vh) [fim-section-avaliacoes] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
 }
-.container-principal .section .box-titles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0;
-}
-.container-principal .section .box-titles .title {
-  text-transform: uppercase;
-  color: #DA4167;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 14px;
-}
-.container-principal .section .box-titles .subtitle {
-  text-align: center;
-  color: #333333;
-  font-size: 14px;
-  padding: 0 15px;
+.container-principal .section {
+  /*         .box-titles{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin:30px 0;
+
+              .title{
+                  text-transform: uppercase;
+                  color: v.$cor-primaria;
+                  margin-bottom: 10px;
+                  font-weight: bold;
+                  font-size: 14px;
+              }
+              .subtitle{
+                  text-align: center;
+                  color: v.$cor-secundaria;
+                  font-size: 14px;
+                  padding: v.$pad-texto;
+              }
+          } */
 }
 
 .contente-btn-volta-topo {
