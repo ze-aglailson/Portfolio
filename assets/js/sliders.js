@@ -1,9 +1,7 @@
 $(document).ready(function(){
-    console.log('aqui')
     $(".owl-carousel-servicos-recentes").owlCarousel({
         items:4,
         loop:true,
-        dots:true,
         autoplay:false,
         autoplayTimeout:3000,
         responsive:{

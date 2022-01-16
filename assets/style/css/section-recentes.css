@@ -69,4 +69,16 @@
   margin: 0;
 }
 
+@media screen and (min-width: 720px) {
+  .section-recentes .box-titles .title {
+    font-size: 25px;
+  }
+  .section-recentes .box-titles .subtitle {
+    font-size: 16px;
+  }
+  .section-recentes .container-recentes .item {
+    height: 320px;
+  }
+}
+
 /*# sourceMappingURL=section-recentes.css.map */
