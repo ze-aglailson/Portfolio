@@ -1,0 +1,85 @@
+.section-sobre {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-sobre/fim-section-sobre;
+}
+.section-sobre .container-imagens .card {
+  border: none;
+  background: none;
+}
+.section-sobre .container-sobre {
+  padding: 100px 0;
+  background: #d63384;
+}
+.section-sobre .container-sobre .box-contato .card {
+  border: none;
+  background: none;
+}
+.section-sobre .container-sobre .box-contato .card img {
+  border-radius: 15px 15px 0 0;
+}
+.section-sobre .container-sobre .box-contato .content-sobre {
+  background: #FFF;
+  padding: 20px;
+  border-radius: 0 0 15px 15px;
+}
+.section-sobre .container-sobre .box-contato .content-sobre .title-name {
+  font-size: 24px;
+  color: #3d383a;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.section-sobre .container-sobre .box-contato .content-sobre .subtitle-profissao {
+  color: #978b91;
+  font-size: 16px;
+}
+.section-sobre .container-sobre .box-contato .content-sobre hr {
+  width: 60px;
+  height: 5px;
+  background: #d63384;
+  border: none;
+  opacity: 1;
+}
+.section-sobre .container-sobre .box-contato .content-sobre .descricao {
+  font-size: 14px;
+  color: #584f53;
+}
+.section-sobre .container-sobre .box-contato .content-sobre .btn-contato {
+  background: #d63384;
+  color: #FFF;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .section-sobre .container-sobre .box-contato {
+    margin-top: -250px;
+    display: flex;
+  }
+  .section-sobre .container-sobre .box-contato .pr-0 {
+    padding-right: 0;
+  }
+  .section-sobre .container-sobre .box-contato .pl-0 {
+    padding-left: 0;
+  }
+  .section-sobre .container-sobre .box-contato .card img {
+    border-radius: 15px 0 0 15px;
+  }
+  .section-sobre .container-sobre .box-contato .content-sobre {
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-sobre .container-sobre .box-contato .content-sobre .btn-contato {
+    width: 30%;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=section-sobre.css.map */

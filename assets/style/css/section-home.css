@@ -1,0 +1,76 @@
+/* #ff6b81 */
+.section-home {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-home/fim-section-home;
+  position: relative;
+  overflow: hidden;
+}
+.section-home .background-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../../img/sistema/banner-home/banner-home.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.section-home .background-home .box-titles-btn-acao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-home .background-home .box-titles-btn-acao .titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.section-home .background-home .box-titles-btn-acao .titles .title {
+  color: #FFF;
+  text-align: center;
+  font-weight: bold;
+}
+.section-home .background-home .box-titles-btn-acao .box-btn-acao {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.section-home .background-home .box-titles-btn-acao .box-btn-acao a.btn-acao {
+  display: block;
+  padding: 10px 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  border: 1px solid #f24d57;
+  border-radius: 20px;
+  font-weight: 300;
+}
+.section-home .background-home .box-titles-btn-acao .box-btn-acao a.btn-acao:hover {
+  background: #f24d57;
+}
+.section-home .box-btn-whatsapp {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5%;
+  bottom: 100px;
+  background-color: #00e676;
+  color: #FFF;
+  font-size: 1.4em;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 920px) {
+  .box-titles-btn-acao .titles {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=section-home.css.map */

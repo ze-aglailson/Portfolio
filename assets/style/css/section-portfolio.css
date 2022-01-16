@@ -1,0 +1,8 @@
+/* #ff6b81 */
+.section-portfolio {
+  grid-column: inicio-temp/fim-temp;
+  grid-row: inicio-section-portfolio/fim-section-portfolio;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=section-portfolio.css.map */
