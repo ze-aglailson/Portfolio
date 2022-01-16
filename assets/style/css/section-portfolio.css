@@ -1,8 +1,146 @@
 /* #ff6b81 */
 .section-portfolio {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-portfolio/fim-section-portfolio;
   background-color: #fff;
+}
+.section-portfolio .box-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+.section-portfolio .box-titles .title {
+  text-transform: uppercase;
+  color: #d63384;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.section-portfolio .box-titles .subtitle {
+  text-align: center;
+  color: #d63384;
+  font-size: 14px;
+  padding: 10px 30px;
+}
+.section-portfolio .container-portfolio .grid-portfolio {
+  display: grid;
+  grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
+  grid-template-rows: [inicio-job-1] 200px [fim-job-1] 10px [inicio-job-2] 200px [fim-job-2] 10px [inicio-job-3] 200px [fim-job-3] 10px [inicio-job-4] 200px [fim-job-4] 10px [inicio-job-5] 200px [fim-job-5] 10px [inicio-job-6] 200px [fim-job-6] 10px [inicio-job-7] 200px [fim-job-7] 10px;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job {
+  grid-column: inicio-left/fim-rigth;
+  background-color: #CCC;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job .background-job {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job .background-job .box-informacoes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job .background-job .box-informacoes .icon-coracao {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job .background-job .box-informacoes .icon-coracao span {
+  cursor: pointer;
+  color: #FFF;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job .background-job .titles {
+  display: flex;
+  flex-direction: column;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job .background-job .titles .title {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: bold;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job .background-job .titles .subtitle {
+  font-size: 14px;
+  color: #d63384;
+  margin: 0;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job-1 {
+  grid-row: inicio-job-1/fim-job-1;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job-2 {
+  grid-row: inicio-job-2/fim-job-2;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job-3 {
+  grid-row: inicio-job-3/fim-job-3;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job-4 {
+  grid-row: inicio-job-4/fim-job-4;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job-5 {
+  grid-row: inicio-job-5/fim-job-5;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job-6 {
+  grid-row: inicio-job-6/fim-job-6;
+}
+.section-portfolio .container-portfolio .grid-portfolio .job-7 {
+  grid-row: inicio-job-7/fim-job-7;
+}
+
+@media screen and (min-width: 767px) {
+  .section-portfolio .container-portfolio .grid-portfolio {
+    grid-template-columns: [inicio-left] 0px [inicio-jobs-1-4] 1fr repeat(3, 10px 1fr) [fim-jobs-1-4] 10px [inicio-jobs-2-5-7] repeat(2, 10px 2fr) [fim-job-5] 10px [inicio-job-6] repeat(2, 10px 2fr) [fim-job-2] 10px [inicio-job-3] 1fr repeat(2, 10px 2fr) [fim-jobs-3-6-7] 0px [fim-rigth];
+    grid-template-rows: [inicio-jobs-1-2-3] 150px [fim-jobs-1-2-3] 10px [inicio-jobs-4-5-6] 150px [fim-jobs-5-6] 10px [inicio-job-7] 160px [fim-jobs-4-7];
+  }
+  .section-portfolio .container-portfolio .grid-portfolio .job-1 {
+    grid-column: inicio-jobs-1-4/fim-jobs-1-4;
+    grid-row: inicio-jobs-1-2-3/fim-jobs-1-2-3;
+  }
+  .section-portfolio .container-portfolio .grid-portfolio .job-2 {
+    grid-column: inicio-jobs-2-5-7/fim-job-2;
+    grid-row: inicio-jobs-1-2-3/fim-jobs-1-2-3;
+  }
+  .section-portfolio .container-portfolio .grid-portfolio .job-3 {
+    grid-column: inicio-job-3/fim-jobs-3-6-7;
+    grid-row: inicio-jobs-1-2-3/fim-jobs-1-2-3;
+  }
+  .section-portfolio .container-portfolio .grid-portfolio .job-4 {
+    grid-column: inicio-jobs-1-4/fim-jobs-1-4;
+    grid-row: inicio-jobs-4-5-6/fim-jobs-4-7;
+  }
+  .section-portfolio .container-portfolio .grid-portfolio .job-5 {
+    grid-column: inicio-jobs-2-5-7/fim-job-5;
+    grid-row: inicio-jobs-4-5-6/fim-jobs-5-6;
+  }
+  .section-portfolio .container-portfolio .grid-portfolio .job-6 {
+    grid-column: inicio-job-6/fim-jobs-3-6-7;
+    grid-row: inicio-jobs-4-5-6/fim-jobs-5-6;
+  }
+  .section-portfolio .container-portfolio .grid-portfolio .job-7 {
+    grid-column: inicio-jobs-2-5-7/fim-jobs-3-6-7;
+    grid-row: inicio-job-7/fim-job-7;
+  }
+}
+@media screen and (min-width: 720px) {
+  .section-portfolio .box-titles .title {
+    font-size: 25px;
+  }
+  .section-portfolio .box-titles .subtitle {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-portfolio .container-portfolio .grid-portfolio {
+    grid-template-columns: [inicio-left] 0px [inicio-jobs-1-4] 1fr repeat(3, 10px 1fr) [fim-jobs-1-4] 10px [inicio-jobs-2-5-7] repeat(2, 10px 2fr) [fim-job-5] 10px [inicio-job-6] repeat(2, 10px 2fr) [fim-job-2] 10px [inicio-job-3] 1fr repeat(2, 10px 2fr) [fim-jobs-3-6-7] 0px [fim-rigth];
+    grid-template-rows: [inicio-jobs-1-2-3] 200px [fim-jobs-1-2-3] 10px [inicio-jobs-4-5-6] 200px [fim-jobs-5-6] 10px [inicio-job-7] 210px [fim-jobs-4-7];
+  }
 }
 
 /*# sourceMappingURL=section-portfolio.css.map */
