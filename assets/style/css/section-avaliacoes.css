@@ -1,6 +1,35 @@
 .section-avaliacoes {
-  grid-column: inicio-temp/fim-temp;
+  grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-avaliacoes/fim-section-avaliacoes;
+  background-color: #FFF;
+}
+.section-avaliacoes .box-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+.section-avaliacoes .box-titles .title {
+  text-transform: uppercase;
+  color: #d63384;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.section-avaliacoes .box-titles .subtitle {
+  text-align: center;
+  color: #d63384;
+  font-size: 14px;
+  padding: 10px 30px;
+}
+
+@media screen and (min-width: 720px) {
+  .section-avaliacoes .box-titles .title {
+    font-size: 25px;
+  }
+  .section-avaliacoes .box-titles .subtitle {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=section-avaliacoes.css.map */

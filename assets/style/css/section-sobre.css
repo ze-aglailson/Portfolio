@@ -6,6 +6,9 @@
   border: none;
   background: none;
 }
+.section-sobre .container-imagens .card-img-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), black);
+}
 .section-sobre .container-sobre {
   padding: 100px 0;
   background: #d63384;
@@ -16,6 +19,9 @@
 }
 .section-sobre .container-sobre .box-contato .card img {
   border-radius: 15px 15px 0 0;
+}
+.section-sobre .container-sobre .box-contato .card-img-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
 }
 .section-sobre .container-sobre .box-contato .content-sobre {
   background: #FFF;
@@ -53,7 +59,7 @@
 
 @media screen and (min-width: 767px) {
   .section-sobre .container-sobre .box-contato {
-    margin-top: -350px;
+    margin-top: -250px;
     display: flex;
   }
   .section-sobre .container-sobre .box-contato .pr-0 {

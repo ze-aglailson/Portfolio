@@ -23,6 +23,9 @@
   font-size: 14px;
   padding: 10px 30px;
 }
+.section-portfolio .container-portfolio {
+  padding-bottom: 30px;
+}
 .section-portfolio .container-portfolio .grid-portfolio {
   display: grid;
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
