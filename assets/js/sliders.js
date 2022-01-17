@@ -20,4 +20,13 @@ $(document).ready(function(){
             }
         }
     });
+
+    $(".owl-carousel-avaliacoes").owlCarousel({
+        items:1,
+        loop:true,
+        dots:true,
+        autoplay:false,
+        autoplayTimeout:3000
+
+    });
 })
