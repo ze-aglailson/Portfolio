@@ -2,7 +2,7 @@
 * Status
   * Em Andamento
 * Preview
-  * https://ze-aglailson.github.io/Portfolio-fotografo/
+  * https://ze-aglailson.github.io/Portfolio
 * Skills
   * HTML 
   * CSS  
