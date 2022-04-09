@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* #ff6b81 */
 * {
   box-sizing: border-box;
@@ -20,6 +21,11 @@ a {
 
 body {
   background: #f7f4f4;
+}
+
+/* Ajustes padrão */
+.section .box-titles .subtitle {
+  padding: 10px 10%;
 }
 
 /*# sourceMappingURL=reset.css.map */

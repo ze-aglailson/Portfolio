@@ -2,7 +2,6 @@
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-avaliacoes/fim-section-avaliacoes;
   background-color: #FFF;
-  padding: 0 10%;
 }
 .section-avaliacoes .box-titles {
   display: flex;
@@ -21,7 +20,6 @@
   text-align: center;
   color: #d63384;
   font-size: 14px;
-  padding: 10px 30px;
 }
 .section-avaliacoes .container-avaliacoes {
   padding-bottom: 30px;
