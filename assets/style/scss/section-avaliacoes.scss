@@ -1,0 +1,92 @@
+
+.section-avaliacoes{
+    grid-column: inicio-left/fim-rigth;
+    grid-row:inicio-section-avaliacoes/fim-section-avaliacoes;
+    background-color: #FFF;
+
+    .box-titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:30px 0 0 0;
+
+        .title{
+            text-transform: uppercase;
+            color: #d63384;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .subtitle{
+            text-align: center;
+            color: #d63384;
+            font-size: 14px;
+        }
+    }
+
+    .container-avaliacoes{
+        padding-bottom: 30px;
+        box-shadow: 0 0.15em 0.5em 0 rgb(0 0 0 / 10%);
+        
+        .item{
+            height: auto;
+            padding: 20px 0;
+            .box-img-titles{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .div-img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    background: #444;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                }
+
+                .titles{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .title{
+                        color: #444;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    .subtitle{
+                        color: #978b91;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .descricao-avaliacao{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .descricao{
+                    width: 100%;
+                    font-size: 14px;
+                    color: #584f53;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px){
+    .section-avaliacoes{
+        .box-titles{
+
+            .title{
+                font-size: 25px;
+            }
+            .subtitle{
+                font-size: 16px;
+            }
+        }
+    }
+}

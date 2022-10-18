@@ -1,0 +1,69 @@
+@use 'v';
+.container-principal{
+    position: relative;
+    display: grid;
+    grid-template-columns: [inicio-left] 5% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 5% [fim-rigth];
+    grid-template-rows: 
+                    [inicio-section-home] 100vh [fim-section-home] 0px
+                    [inicio-section-sobre] auto [fim-section-sobre]0px
+                    [inicio-section-recentes] min(100vh) [fim-section-recentes]0px
+                    [inicio-section-portfolio] auto [fim-section-portfolio]0px
+                    [inicio-section-avaliacoes] min(100vh) [fim-section-avaliacoes]0px
+                    [inicio-section-contato] min(100vh) [fim-section-contato]0px
+                    ;
+    .section{
+/*         .box-titles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:30px 0;
+    
+            .title{
+                text-transform: uppercase;
+                color: v.$cor-primaria;
+                margin-bottom: 10px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .subtitle{
+                text-align: center;
+                color: v.$cor-secundaria;
+                font-size: 14px;
+                padding: v.$pad-texto;
+            }
+        } */
+    }
+}
+
+.contente-btn-volta-topo{
+    position: fixed;
+    right: v.$padding-x-rigth-padrao;
+    bottom:v.$padding-y-bottom-padrao;
+
+    .btn-volta-top{
+        padding: 8px 10px;
+        border: 1px solid v.$cor-branco;
+        cursor: pointer;
+        background-color: v.$cor-primaria;
+        color: v.$cor-branco;
+        border-radius: 3px;
+        display: none;
+    }
+
+    .btn-volta-top-visivel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 520px){
+
+
+}
+
+
+

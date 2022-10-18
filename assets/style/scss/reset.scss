@@ -1,0 +1,20 @@
+@use 'v';
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open sans", sans-serif;
+}
+img{width: 100%;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{background: v.$cinza-claro;}
+
+/* Ajustes padrão */
+.section{
+    .box-titles{
+        .subtitle{
+            padding: 10px 10%;
+        }
+    }
+}
