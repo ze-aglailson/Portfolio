@@ -1,0 +1,113 @@
+
+.section-sobre{
+    grid-column: inicio-left/fim-rigth;
+    grid-row:inicio-section-sobre/fim-section-sobre;
+    .container-imagens{
+
+        .card{
+            border: none;
+            background: none;
+        }
+        .card-img-overlay{
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), black);;
+        }
+    }
+
+    .container-sobre{
+        padding: 100px 0;
+        background: #d63384;
+
+        .box-contato{
+
+            .card{
+                border:none;
+                background: none;
+                img{
+                    border-radius: 15px 15px 0 0;
+                }
+            }
+
+            .card-img-overlay{
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+            }
+
+            .content-sobre{
+                background: #FFF;
+                padding: 20px;
+                border-radius: 0 0  15px 15px;
+
+                .title-name{
+                    font-size: 24px;
+                    color: #3d383a;
+                    text-transform: uppercase;
+                    margin-bottom: 12px;
+                    font-weight: bold;
+                }
+                .subtitle-profissao{
+                    color: #978b91;
+                    font-size: 16px;
+                }
+                hr{
+                    width: 60px;
+                    height: 5px;
+                    background: #d63384;
+                    border: none;
+                    opacity: 1;
+                }
+                .descricao{
+                    font-size: 14px;
+                    color: #584f53;
+                }
+                .btn-contato{
+                    background: #d63384;
+                    color: #FFF;
+                    padding: 6px 12px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px){
+
+    .section-sobre{
+        .container-sobre{
+
+            .box-contato{
+                margin-top: -250px;
+                display: flex;
+                .pr-0{
+                    padding-right: 0;
+                }
+                .pl-0{
+                    padding-left: 0;
+                }
+                .card{
+                    
+                    img{
+                        border-radius: 15px 0 0 15px;
+                    }
+                }
+
+                .content-sobre{
+                    height: 100%;
+                    border-radius: 0 15px 15px 0;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .btn-contato{
+                        width: 30%;
+                        align-self: flex-end;
+                        position: absolute;
+                        bottom: 20px;
+                        left: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
