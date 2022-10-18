@@ -2,6 +2,9 @@
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-sobre/fim-section-sobre;
 }
+.section-sobre .container-imagens {
+  display: none;
+}
 .section-sobre .container-imagens .card {
   border: none;
   background: none;
@@ -21,6 +24,7 @@
   border-radius: 15px 15px 0 0;
 }
 .section-sobre .container-sobre .box-contato .card-img-overlay {
+  border-radius: 15px 15px 0 0;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
 }
 .section-sobre .container-sobre .box-contato .content-sobre {
@@ -58,8 +62,18 @@
 }
 
 @media screen and (min-width: 767px) {
+  .section-sobre .container-imagens {
+    display: block;
+  }
+  .section-sobre .container-imagens .card {
+    border: none;
+    background: none;
+  }
+  .section-sobre .container-imagens .card-img-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), black);
+  }
   .section-sobre .container-sobre .box-contato {
-    margin-top: -250px;
+    margin-top: -400px;
     display: flex;
   }
   .section-sobre .container-sobre .box-contato .pr-0 {

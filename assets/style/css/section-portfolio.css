@@ -130,14 +130,6 @@
     grid-row: inicio-job-7/fim-job-7;
   }
 }
-@media screen and (min-width: 720px) {
-  .section-portfolio .box-titles .title {
-    font-size: 25px;
-  }
-  .section-portfolio .box-titles .subtitle {
-    font-size: 16px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .section-portfolio .container-portfolio .grid-portfolio {
     grid-template-columns: [inicio-left] 0px [inicio-jobs-1-4] 1fr repeat(3, 10px 1fr) [fim-jobs-1-4] 10px [inicio-jobs-2-5-7] repeat(2, 10px 2fr) [fim-job-5] 10px [inicio-job-6] repeat(2, 10px 2fr) [fim-job-2] 10px [inicio-job-3] 1fr repeat(2, 10px 2fr) [fim-jobs-3-6-7] 0px [fim-rigth];
