@@ -3,7 +3,7 @@
     grid-column: inicio-left/fim-rigth;
     grid-row:inicio-section-sobre/fim-section-sobre;
     .container-imagens{
-
+        display: none;
         .card{
             border: none;
             background: none;
@@ -28,6 +28,7 @@
             }
 
             .card-img-overlay{
+                border-radius: 15px 15px 0 0;
                 background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
             }
 
@@ -72,10 +73,20 @@
 @media screen and (min-width: 767px){
 
     .section-sobre{
+        .container-imagens{
+            display: block;
+            .card{
+                border: none;
+                background: none;
+            }
+            .card-img-overlay{
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), black);;
+            }
+        }
         .container-sobre{
 
             .box-contato{
-                margin-top: -250px;
+                margin-top: -400px;
                 display: flex;
                 .pr-0{
                     padding-right: 0;
